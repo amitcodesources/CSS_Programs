@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display-noneVsVisibility-hidden</title>
+	<script type="text/javascript">
+		function f1(){
+			document.getElementById('dn').style.display = "none";
+		}
+		function f2(){
+			document.getElementById('vh').style.visibility = "hidden";
+		}
+		function f3(){
+			window.location.reload();
+		}
+	</script>
+</head>
+<body>	
+		<h2>Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there</h2>
+		<h2>visibility:hidden; also hides an element.
+		However, the element will still take up the same space as before. The element will be hidden, but still affect the layout</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<img id="dn" src="../img/nature.jpg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<img id="vh" src="../img/nature.jpg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<br>
+		<button onclick="f1()">DisplayNone</button>
+		<button onclick="f2()">VisibilityHidden</button>
+		<button onclick="f3()">Reset</button>
+</body>
+</html>

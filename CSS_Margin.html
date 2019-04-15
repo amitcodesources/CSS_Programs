@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <title>HTML Margins</title>
+    <style>
+        #indivisualside{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            border: 2px solid black;
+        }
+        #shorthand{
+            margin: 25px 50px 75px 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+        <p id="indivisualside">Margin - Individual Sides</p>
+
+
+        <p id="shorthand">Margin - Shorthand Property</p>
+
+
+        <p style="margin: 25px; border: 2px solid black">All Margin 25px</p>
+
+        <div style="width: 300px; margin: auto; border: 2px solid red">
+            <p>Margin Auto Value</p>
+        </div>
+
+        <div style="margin-left: 100px; border: 2px solid red">
+            <p style="margin-left: inherit">This paragraph has an inherited left margin (from the div element).</p>
+        </div>
+
+
+        <p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. Then, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+        <h1 style="margin: 0 0 50px 0">Heading 1</h1>
+        <h2 style="margin: margin:20px 0 0 0">Heading 2</h2>
+</body>
+</html>

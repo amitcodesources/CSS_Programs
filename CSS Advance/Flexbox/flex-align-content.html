@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>align-content</title>
+	<style type="text/css">
+		.flex-container > div {
+		  background-color: #f1f1f1;
+		  width: 100px;
+		  margin: 10px;
+		  text-align: center;
+		  line-height: 75px;
+		  font-size: 30px;
+		}
+
+		#fac1 {
+		  display: flex;
+		  height: 600px;
+		  flex-wrap: wrap;
+		  align-content: space-between;
+		  background-color: DodgerBlue;
+		}
+
+		#fac2 {
+		  display: flex;
+		  height: 600px;
+		  flex-wrap: wrap;
+		  align-content: space-around;
+		  background-color: DodgerBlue;
+		}
+
+		#fac3 {
+		  display: flex;
+		  height: 600px;
+		  flex-wrap: wrap;
+		  align-content: stretch;
+		  background-color: DodgerBlue;
+		}
+
+		#fac4 {
+		  display: flex;
+		  height: 600px;
+		  flex-wrap: wrap;
+		  align-content: center;
+		  background-color: DodgerBlue;
+		}
+
+		#fac5 {
+		  display: flex;
+		  height: 600px;
+		  flex-wrap: wrap;
+		  align-content: flex-start;
+		  background-color: DodgerBlue;
+		}
+
+		#fac6 {
+		  display: flex;
+		  height: 600px;
+		  flex-wrap: wrap;
+		  align-content: flex-end;
+		  background-color: DodgerBlue;
+		}
+	</style>
+</head>
+<body>
+		<h1>The align-content Property</h1>
+		<h3>The "align-content: space-between;" displays the flex lines with equal space between them:</h3>
+		<div class="flex-container" id="fac1">
+		  <div>1</div>
+		  <div>2</div>
+		  <div>3</div>  
+		  <div>4</div>
+		  <div>5</div>
+		  <div>6</div>  
+		  <div>7</div>
+		  <div>8</div>
+		  <div>9</div>  
+		  <div>10</div>
+		  <div>11</div>
+		  <div>12</div>  
+		</div>
+
+		<h3>The "align-content: space-around;" displays the flex lines with space before, between, and after them:</h3>
+		<div class="flex-container" id="fac2">
+		  <div>1</div>
+		  <div>2</div>
+		  <div>3</div>  
+		  <div>4</div>
+		  <div>5</div>
+		  <div>6</div>  
+		  <div>7</div>
+		  <div>8</div>
+		  <div>9</div>  
+		  <div>10</div>
+		  <div>11</div>
+		  <div>12</div>  
+		</div>
+
+		<h3>The "align-content: stretch;" stretches the flex lines to take up the remaining space (this is default):</h3>
+		<div class="flex-container" id="fac3">
+		  <div>1</div>
+		  <div>2</div>
+		  <div>3</div>  
+		  <div>4</div>
+		  <div>5</div>
+		  <div>6</div>  
+		  <div>7</div>
+		  <div>8</div>
+		  <div>9</div>  
+		  <div>10</div>
+		  <div>11</div>
+		  <div>12</div>  
+		</div>
+
+		<h3>The "align-content: center;" displays the flex lines in the middle of the container:</h3>
+		<div class="flex-container" id="fac4">
+		  <div>1</div>
+		  <div>2</div>
+		  <div>3</div>  
+		  <div>4</div>
+		  <div>5</div>
+		  <div>6</div>  
+		  <div>7</div>
+		  <div>8</div>
+		  <div>9</div>  
+		  <div>10</div>
+		  <div>11</div>
+		  <div>12</div>  
+		</div>
+
+		<h3>The "align-content: flex-start;" displays the flex lines at the start of the container:</h3>
+		<div class="flex-container" id="fac5">
+		  <div>1</div>
+		  <div>2</div>
+		  <div>3</div>  
+		  <div>4</div>
+		  <div>5</div>
+		  <div>6</div>  
+		  <div>7</div>
+		  <div>8</div>
+		  <div>9</div>  
+		  <div>10</div>
+		  <div>11</div>
+		  <div>12</div>  
+		</div>
+
+		<p>The "align-content: flex-end;" displays the flex lines at the end of the container:</p>
+		<div class="flex-container" id="fac6">
+		  <div>1</div>
+		  <div>2</div>
+		  <div>3</div>  
+		  <div>4</div>
+		  <div>5</div>
+		  <div>6</div>  
+		  <div>7</div>
+		  <div>8</div>
+		  <div>9</div>  
+		  <div>10</div>
+		  <div>11</div>
+		  <div>12</div>  
+		</div>
+</body>
+</html>

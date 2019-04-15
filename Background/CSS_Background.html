@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<haed>
+    <title>CSS Background</title>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+        }
+        #bgimage{
+            background-image: url("../img/background.jpg");
+        }
+        #bgimagerepeatx{
+            background-image: url("../img/nature.jpg");
+            background-repeat: repeat-x;
+            height: 200px;
+            width: 1000px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #bgimagerepeaty{
+            background-image: url("../img/nature.jpg");
+            background-repeat: repeat-y;
+            height: 500px;
+            width: 1000px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #bgimagenorepeat{
+            background-image: url("../img/nature.jpg");
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 1000px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #bgimageposition{
+            background-image: url("../img/nature.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 500px;
+            width: 1000px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #bgimagefixedposition{
+            background-image: url("../img/nature.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-attachment: fixed;
+            height: 500px;
+            width: 1000px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #bgimageshorthand{
+            background: #ff6347 url("../img/nature.jpg") no-repeat left bottom fixed;
+            height: 500px;
+            width: 1000px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+    </style>
+</haed>
+<body>
+    <div>
+        <h1 style="background-color: darkorange">Background Color</h1>
+    </div>
+
+    <div id="bgimage">
+        <h1>Background Image</h1>
+    </div>
+
+    <div id="bgimagerepeatx">
+        <h1>Background Image Repeat Horizontally</h1>
+    </div>
+
+    <div id="bgimagerepeaty">
+        <h1>Background Image Repeat Verticaly</h1>
+    </div>
+
+
+    <div id="bgimagenorepeat">
+        <h1>Background Image - no-repeat</h1>
+    </div>
+
+    <div id="bgimageposition">
+        <h1>Background Image - Set position and no-repeat</h1>
+    </div>
+
+    <div id="bgimagefixedposition">
+        <h1>Background Image - Fixed position</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae consequuntur cumque dicta dignissimos dolore dolorem eaque nemo nisi odio officia placeat praesentium quasi quo, quod saepe sapiente tenetur vero voluptatibus? Beatae consectetur distinctio dolore excepturi in libero, minima? Ad adipisci debitis eius eveniet labore non pariatur placeat velit.</p>
+    </div>
+
+    <div id="bgimageshorthand">
+        <h1>Background - Shorthand property</h1>
+    </div>
+
+</body>
+</html>

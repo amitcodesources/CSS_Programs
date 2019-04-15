@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS_Text_Effects</title>
+	<style> 
+	p.test1 {
+	  white-space: nowrap; 
+	  width: 200px; 
+	  border: 1px solid #000000;
+	  overflow: hidden;
+	  text-overflow: clip;
+	}
+
+	p.test2 {
+	  white-space: nowrap; 
+	  width: 200px; 
+	  border: 1px solid #000000;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	}
+	p.test1:hover, p.test2:hover{
+		overflow: visible;
+	} 
+
+	p.test3 {
+	  width: 11em; 
+	  border: 1px solid #000000;
+	  word-wrap: break-word;
+	}
+
+	p.test4 {
+	  width: 140px; 
+	  border: 1px solid #000000;
+	  word-break: keep-all;
+	}
+
+	p.test5 {
+	  width: 140px; 
+	  border: 1px solid #000000;
+	  word-break: break-all;
+	}
+
+
+	p.test6 {
+	  writing-mode: horizontal-tb; 
+	}
+
+	span.test7 {
+	  writing-mode: vertical-rl; 
+	}
+
+	p.test8 {
+	  writing-mode: vertical-rl; 
+	}
+
+	div.a {
+	  text-align: justify; /* For Edge */
+	  -moz-text-align-last: right; /* For Firefox prior 58.0 */
+	  text-align-last: right;
+	}
+
+	div.b {
+	  text-align: justify; /* For Edge */
+	  -moz-text-align-last: center; /* For Firefox prior 58.0 */
+	  text-align-last: center;
+	}
+
+	div.c {
+	  text-align: justify; /* For Edge */
+	  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+	  text-align-last: justify;
+	}
+
+	.just {
+	  text-align: justify;
+	  text-justify: inter-word;
+	}
+	</style>
+</head>
+<body>
+		<h1>The text-overflow Property</h1>
+		<p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+		<h2>text-overflow: clip:</h2>
+		<p class="test1">This is some long text that will not fit in the box</p>
+
+		<h2>text-overflow: ellipsis:</h2>
+		<p class="test2">This is some long text that will not fit in the box</p>
+
+		<h1>The word-wrap Property</h1>
+
+		<p class="test3"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+		<h1>The word-break Property</h1>
+
+		<p class="test4">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+		<p class="test5">This paragraph contains some text. The lines will break at any character.</p>
+
+		<h1>The writing-mode Property</h1>
+
+		<p class="test6">Some text with default writing-mode.</p>
+
+		<p>Some text with a span element with a <span class="test7">vertical-rl</span> writing-mode.</p>
+
+		<p class="test8">Some text with writing-mode: vertical-rl.</p>
+
+
+		<h1>The text-align-last Property</h1>
+
+		<h2>text-align-last: right:</h2>
+		<div class="a">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<h2>text-align-last: center:</h2>
+		<div class="b">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<h2>text-align-last: justify:</h2>
+		<div class="c">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<h1>The text-justify Property</h1>
+
+		<div class="just">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</div>
+</body>
+</html>

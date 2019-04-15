@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form_Input_Styles</title>
+	<style type="text/css">
+		#fname{
+			width: 100%;
+		}
+		#fn_p, #ln_p{
+			width: 100%;
+		  	padding: 12px 20px;
+		  	margin: 8px 0;
+		  	box-sizing: border-box;
+		}
+		#fn_b, #ln_b{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid red;
+			border-radius: 4px;
+		}
+		#fn_bb, #ln_bb{
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  box-sizing: border-box;
+			  border: none;
+			  border-bottom: 2px solid red;
+		}
+		#fn_c, #ln_c{
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  box-sizing: border-box;
+			  border: none;
+			  background-color: #3CBC8D;
+			  color: white;
+		}
+		#fn_c:focus, #ln_c:focus{
+			  background-color: white;
+			  color: black;
+			  border: 2px solid blue;
+		}
+	</style>
+</head>
+<body>	
+		<h3>A full-width input field:</h3>
+		<form>
+		  <label for="fname">First Name</label>
+		  <input type="text" id="fname" name="fname">
+		</form>
+		<h3>Padded text fields:</h3>
+		<form>
+		  <label for="fn_p">First Name</label>
+		  <input type="text" id="fn_p" name="fn_p">
+		  <label for="ln_p">Last Name</label>
+		  <input type="text" id="ln_p" name="ln_p">
+		</form>
+		<h3>Text fields with borders:</h3>
+		<form>
+		  <label for="fn_b">First Name</label>
+		  <input type="text" id="fn_b" name="fn_b">
+		  <label for="ln_b">Last Name</label>
+		  <input type="text" id="ln_b" name="ln_b">
+		</form>
+		<h3>Text fields with only a bottom border:</h3>
+		<form>
+		  <label for="fn_bb">First Name</label>
+		  <input type="text" id="fn_bb" name="fn_bb">
+		  <label for="ln_bb">Last Name</label>
+		  <input type="text" id="ln_bb" name="ln_bb">
+		</form>
+		<h3>Colored text fields:</h3>
+		<form>
+		  <label for="fn_c">First Name</label>
+		  <input type="text" id="fn_c" name="fn_c" value="John">
+		  <label for="ln_c">Last Name</label>
+		  <input type="text" id="ln_c" name="ln_c" value="Doe">
+		</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#cntr1 {
+	display: flex;
+	border: 2px solid black;
+	flex-direction: row;
+}
+#cntr2 {
+	display: flex;
+	border: 2px solid black;
+	flex-direction: row-reverse;
+}
+#cntr3 {
+	display: flex;
+	border: 2px solid black;
+	flex-direction: column;
+}
+#cntr4 {
+	display: flex;
+	border: 2px solid black;
+	flex-direction: column-reverse;
+}
+

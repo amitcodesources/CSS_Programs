@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Borders</title>
+    <style>
+        p.one {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        p.three {
+            border-style: dotted;
+            border-width: 2px;
+        }
+
+        p.four {
+            border-style: dotted;
+            border-width: thick;
+        }
+
+        p.five {
+            border-style: double;
+            border-width: 15px;
+        }
+
+        p.six {
+            border-style: double;
+            border-width: thick;
+        }
+
+        p.seven {
+            border-style: solid;
+            border-width: 2px 10px 4px 20px;
+        }
+
+        p.c-one {
+            border-style: solid;
+            border-color: red;
+        }
+
+        p.c-two {
+            border-style: solid;
+            border-color: green;
+        }
+
+        p.c-three {
+            border-style: solid;
+            border-color: red green blue yellow;
+        }
+
+        p.ind{
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+        }
+
+        p.shorthand{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+        <h2>The border-style Property</h2>
+
+        <p style="border-style: solid">A solid border.</p>
+        <p style="border-style: dotted">A dotted border.</p>
+        <p style="border-style: dashed">A dashed border.</p>
+        <p style="border-style: double">A double border.</p>
+        <p style="border-style: groove">A groove border.</p>
+        <p style="border-style: ridge">A ridge border.</p>
+        <p style="border-style: inset">An inset border.</p>
+        <p style="border-style: outset">An outset border.</p>
+        <p style="border-style: hidden">A hidden border.</p>
+        <p style="border-style: dotted dashed solid double">A mixed border.</p>
+        <p style="border-style: none">No border.</p>
+
+        <h2>The border-width Property</h2>
+
+        <p class="one">A borderstyle-solid borderwidth-5px</p>
+        <p class="two">A border style-solid borderwidth-midium</p>
+        <p class="three">A border style-dotted borderwidth-2px</p>
+        <p class="four">A border style-dotted borderwidth-thick</p>
+        <p class="five">A border style-dubble borderwidth-15px</p>
+        <p class="six">A border style-dubble borderwidth-thick</p>
+        <p class="seven">A border style-solid borderwidth-2px 10px 4px 20px</p>
+
+        <h2>The border-color Property</h2>
+
+        <p class="c-one">A solid red border</p>
+        <p class="c-two">A solid green border</p>
+        <p class="c-three">A solid multicolor border</p>
+
+        <h2>Border - Individual Sides</h2>
+        <p class="ind">2 different border styles.</p>
+
+        <h2>Border - Shorthand Property</h2>
+        <p class="shorthand">Border - Shorthand Property</p>
+
+        <h2>Top Border</h2>
+        <p style="border-top: 6px solid red; background-color: grey">Top Border Property</p>
+
+        <h2>Bottom Border</h2>
+        <p style="border-bottom: 6px solid red; background-color: grey">Bottom Border Property</p>
+
+        <h2>Left Border</h2>
+        <p style="border-left: 6px solid red; background-color: grey">Left Border Property</p>
+
+        <h2>Right Border</h2>
+        <p style="border-right: 6px solid red; background-color: grey">Right Border Property</p>
+
+        <h2>Rounded Border</h2>
+        <p style="border: 2px solid red; background-color: grey; border-radius: 5px">Left Border Property</p>
+
+</body>
+</html>

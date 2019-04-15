@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS FONTS</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style>
+        div, p{
+            background-color: seagreen;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+        #georgia{
+            font-family: Georgia, Serif;
+        }
+        #arial{
+            font-family: Arial, sans-serif;
+        }
+        #lcdcncl{
+            font-family: "Lucida Console", monospace;
+        }
+        #oswaldfont{
+            font-family: 'Oswald', sans-serif;
+        }
+        #custom{
+            font-family:"Lucida Console", monospace;
+            font-size: 80px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        p.normal {
+            font-style: normal;
+        }
+
+        p.italic {
+            font-style: italic;
+        }
+
+        p.oblique {
+            font-style: oblique;
+        }
+
+        p.normal {
+            font-weight: normal;
+        }
+
+        p.light {
+            font-weight: lighter;
+        }
+
+        p.thick {
+            font-weight: bold;
+        }
+
+        p.thicker {
+            font-weight: bolder;
+        }
+
+        p.var-normal {
+            font-variant: normal;
+        }
+
+        p.var-small {
+            font-variant: small-caps;
+        }
+
+    </style>
+</head>
+<body>
+<!-- FONT FAMILY -->
+<div>
+    <h1 id="georgia">This is Georgia Font in the System</h1>
+</div>
+
+<div>
+    <h1 id="arial">This is Arial Font in the System</h1>
+</div>
+
+<div>
+    <h1 id="lcdcncl">This is Lucida Console Font in the System</h1>
+</div>
+
+<div>
+    <h1 id="oswaldfont">This is Oswald Font From Google</h1>
+</div>
+
+
+<!-- Custom Font-->
+<div>
+    <h1 id="custom">This is Oswald Font 80px Bold Font</h1>
+</div>
+
+<!-- FONT STYLE -->
+
+<p class="normal">This is a paragraph in normal style.</p>
+<p class="italic">This is a paragraph in italic style.</p>
+<p class="oblique">This is a paragraph in oblique style.</p>
+
+
+<!-- FONT SIZE -->
+<h1 style="font-size: 100%">This is heading having value of 100%</h1>
+<h1 style="font-size: 25px">This is heading having value of 25px</h1>
+<h1 style="font-size: 2.5em">This is heading having value of 2.5em</h1>
+
+<!-- FONT WEIGHT -->
+<p class="normal">This is a paragraph normal font weight</p>
+<p class="light">This is a paragraph lighter font weight</p>
+<p class="thick">This is a paragraph bold font weight</p>
+<p class="thicker">This is a paragraph bolder font weight</p>
+
+<!-- Responsive Font Size -->
+<h1 style="font-size:10vw">Hello World</h1>
+
+<!-- Font variant -->
+<p class="var-normal">My name is Hege Refsnes.</p>
+<p class="var-small">My name is Hege Refsnes.</p>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS_Display-Inline-Block</title>
+    <style>
+        span.a {
+            display: inline; /* the default for span */
+            width: 70px;
+            height: 70px;
+            padding: 15px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+
+        span.b {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            padding: 15px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+
+        span.c {
+            display: block;
+            width: 70px;
+            height: 70px;
+            padding: 15px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+
+        .nav {
+            background-color: yellow;
+            padding: 15px;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .floating-box {
+            display: inline-block;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .after-box {
+            border: 3px solid red;
+        }
+
+    </style>
+</head>
+<body>
+<h1>The display Property</h1>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h1>Horizontal Navigation Links</h1>
+
+<ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Our Clients</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Map</a></li>
+</ul>
+
+<h2>The Old Way - using float</h2>
+
+<div class="floating-box">Floating box 1</div>
+<div class="floating-box">Floating box 2</div>
+<div class="floating-box">Floating box 3</div>
+<div class="floating-box">Floating box 4</div>
+<div class="floating-box">Floating box 5</div>
+<div class="floating-box">Floating box 6</div>
+<div class="floating-box">Floating box 7</div>
+<div class="floating-box">Floating box 8</div>
+
+<div class="after-box">Another box, after the floating boxes...</div>
+</body>
+</html>

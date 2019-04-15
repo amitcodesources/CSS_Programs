@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vertical_Align_Text</title>
+	<style type="text/css">
+		.centerVP {
+            padding: 70px 0;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+		.centerLH {
+            line-height: 200px;
+            border: 3px solid green;
+            text-align: center;
+        }
+        .centerLH p {
+            line-height: 1.5;
+            display: inline-block;
+            /*vertical-align: middle;*/
+        }
+	</style>
+</head>
+<body>
+		<h2>Center Vertically - Using padding</h2>
+        <p>In this example, we use the padding property to center the div element vertically:</p>
+        <div class="centerVP">
+            <p>I am vertically centered.</p>
+        </div>
+		<h2>Center Vertically - Using line-height</h2>
+        <p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+
+        <div class="centerLH">
+            <p>I am vertically and horizontally centered.</p>
+        </div>
+</body>
+</html>

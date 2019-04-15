@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grid Elements</title>
+		<style>
+		.grid-container1 {
+		/*display: grid;*/
+		display: inline-grid;
+		
+		/*grid-column-gap: 50px;*/
+
+		/*grid-row-gap: 50px;*/
+
+		/*grid-gap: 50px 100px;*/
+
+		grid-gap: 50px;
+
+		grid-template-columns: auto auto auto;
+		background-color: #2196F3;
+		padding: 10px;
+		}
+		.grid-item1 {
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		font-size: 30px;
+		text-align: center;
+		}
+		
+		.grid-container2 {
+		  display: grid;
+		  grid-template-columns: auto auto auto;
+		  grid-gap: 10px;
+		  background-color: #2196F3;
+		  padding: 10px;
+		}
+
+		.grid-container2 > div {
+		  background-color: rgba(255, 255, 255, 0.8);
+		  text-align: center;
+		  padding: 20px 0;
+		  font-size: 30px;
+		}
+
+		.itemC1 {
+		  grid-column-start: 1;
+		  grid-column-end: 3;
+		}
+		
+		.grid-container3 {
+		  display: grid;
+		  grid-template-columns: auto auto auto;
+		  grid-gap: 10px;
+		  background-color: #2196F3;
+		  padding: 10px;
+		}
+
+		.grid-container3 > div {
+		  background-color: rgba(255, 255, 255, 0.8);
+		  text-align: center;
+		  padding: 20px 0;
+		  font-size: 30px;
+		}
+
+		.itemR1 {
+		  grid-row-start: 1;
+		  grid-row-end: 3;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Grid Elements</h1>
+		<h3>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</h3>
+		<h3>Use the <em>grid-column-gap</em> property to adjust the space between the columns.</h3>
+		<h3>The grid-row-gap property sets the gap between the rows:</h3>
+		<h3>The grid-gap property is a shorthand property for the grid-column-gap and the grid-row-gap properties:</h3>
+		<h3>The grid-gap property can also be used to set both the row gap and the column gap in one value:</h3>
+		<h4>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</h4>
+		<h4>Direct child element(s) of the grid container automatically becomes grid items.</h4>
+		<div class="grid-container1">
+			<div class="grid-item1">1</div>
+			<div class="grid-item1">2</div>
+			<div class="grid-item1">3</div>
+			<div class="grid-item1">4</div>
+			<div class="grid-item1">5</div>
+			<div class="grid-item1">6</div>
+			<div class="grid-item1">7</div>
+			<div class="grid-item1">8</div>
+			<div class="grid-item1">9</div>
+		</div>
+
+		
+		<h1>Grid Lines</h1>
+		<h3>
+			The line between columns are called column lines. <br>
+			The line between rows are called row lines. 
+		</h3>
+		<div class="grid-container2">
+			<div class="itemC1">1</div>
+			<div class="itemC2">2</div>
+			<div class="itemC3">3</div>
+			<div class="itemC4">4</div>
+			<div class="itemC5">5</div>
+			<div class="itemC6">6</div>
+			<div class="itemC7">7</div>
+			<div class="itemC8">8</div>
+		</div>
+		<p>You can refer to line numbers when placing grid items.</p>
+		<div class="grid-container3">
+			<div class="itemR1">1</div>
+			<div class="itemR2">2</div>
+			<div class="itemR3">3</div>
+			<div class="itemR4">4</div>
+			<div class="itemR5">5</div>
+			<div class="itemR6">6</div>
+			<div class="itemR7">7</div>
+			<div class="itemR8">8</div>
+		</div>
+	</body>
+</html>
+
+
+

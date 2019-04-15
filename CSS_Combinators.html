@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+    <style>
+        .div1 p {
+            background-color: yellow;
+        }
+        .div2 > p {
+            background-color: green;
+        }
+        .div3 + p {
+            background-color: red;
+        }
+        .div4 ~ p {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+        <h2>Descendant Selector</h2>
+        <h3>The descendant selector matches all elements that are descendants of a specified element.</h3>
+        <div class="div1">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <span><p>Paragraph 3 in the div.</p></span>
+        </div>
+        <p>Paragraph 4. Not in a div.</p>
+        <p>Paragraph 5. Not in a div.</p>
+        <br>
+        <h2>Child Selector</h2>
+        <h3>The child selector selects all elements that are the immediate children of a specified element.</h3>
+        <div class="div2">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+        </div>
+        <p>Paragraph 4. Not in a div.</p>
+        <p>Paragraph 5. Not in a div.</p>
+        <br>
+        <h2>Adjacent Sibling Selector</h2>
+        <h3>The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element. <br>
+        Sibling elements must have the same parent element, and "adjacent" means "immediately following".</h3>
+        <div class="div3">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+        <p>Paragraph 3. Not in a div.</p>
+        <p>Paragraph 4. Not in a div.</p>
+        <br>
+        <h2>General Sibling Selector</h2>
+        <h3>The general sibling selector selects all elements that are siblings of a specified element.</h3>
+        <p>Paragraph 1.</p>
+        <div class="div4">
+            <code>Some code.</code>
+            <p>Paragraph 2.</p>
+        </div>
+        <p>Paragraph 3.</p>
+        <code>Some code.</code>
+        <p>Paragraph 4.</p>
+</body>
+</html>
